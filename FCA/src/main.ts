@@ -15,3 +15,18 @@ let bye = "world";
 // SPECIFICATION
 let specify: string = "world";
     // this is how you explicity declare the type of a variable
+
+////////////////////////////////////////////////
+// Functions in TS
+////////////////////////////////////////////////
+
+const getFullName = (name: string, surname: string): string => {
+    // string return is specified after parameters
+    return name + " " + surname
+}
+
+console.log(getFullName("Kenny", "Nguyen"))
+    // If the parameters aren't declared => 
+    // getFullName(name: any, surname: any): string
+
+
