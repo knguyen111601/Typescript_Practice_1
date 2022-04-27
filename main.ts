@@ -13,10 +13,40 @@
 // enum Color { Red, Green, Blue}
 // let backgroundColor = Color.Red
 
+// TYPE ASSERTION
 // Set type after declaration
-let message;
-message = "abc";
+// let message;
+// message = "abc";
 
 // Use string intellisense 
-let endsWithC = (<string>message.endsWith("c"))
-let alternativeWay = (message as string).endsWith("c")
+// let endsWithC = (<string>message.endsWith("c"))
+// let alternativeWay = (message as string).endsWith("c")
+
+
+// CUSTOM TYPES
+
+// Interface defines the shape of an object
+interface Point {
+    x: number,
+    y: number,
+    draw: () => void
+}
+
+// Inline annotation in the parameter
+// let drawPoint = (point: { x: number, y: number }) => {
+//     // ... 
+// }
+
+let drawPoint = (point: Point) => {
+    // ...
+}
+
+let getDistance = (pointA: Point, pointB: Point) => {
+    // ...
+}
+
+drawPoint({
+    x: 1,
+    y: 2
+})
+
