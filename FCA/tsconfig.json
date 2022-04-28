@@ -1,6 +1,0 @@
-{
-    "compilerOptions": {
-        "rootDir": "./src", // Source folder
-        "outDir": "./dist" // Compilation folder
-    }
-}
