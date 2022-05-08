@@ -3,14 +3,14 @@ var user = {
     name: "Kenny",
     age: 3,
     getMessage: function () {
-        return "Hello" + name;
+        return "Hello " + this.name;
     }
 };
 // Javascript has no entity definitions. Meaning what the object must contain (name, age)
 var user2 = {
     name: "Jack",
     getMessage: function () {
-        return "Hello" + name;
+        return "Hello " + this.name;
     }
 };
 console.log(user.getMessage());

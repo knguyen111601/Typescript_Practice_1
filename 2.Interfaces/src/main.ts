@@ -12,7 +12,7 @@ const user: UserInterface = {
     name: "Kenny",
     age: 3,
     getMessage(){
-        return "Hello" + name
+        return "Hello " + this.name
     }
 }
     // Javascript has no entity definitions. Meaning what the object must contain (name, age)
@@ -20,7 +20,7 @@ const user: UserInterface = {
 const user2: UserInterface = {
     name: "Jack",
     getMessage(){
-        return "Hello" + name
+        return "Hello " + this.name
     }
 }
 
